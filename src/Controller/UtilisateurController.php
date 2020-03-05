@@ -35,7 +35,6 @@ class UtilisateurController extends AbstractController
             $em->persist($utilisateur);
             $em->flush();
         }
-
         return $this->render('utilisateur/inscription.html.twig', [
             "inscriptionForm" => $inscriptionForm->createView()
         ]);
