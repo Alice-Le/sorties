@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container-fluid">
+    <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image-b"></div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h3 class="login-heading mb-4">Inscription</h3>
+                            {{ form_start(inscriptionForm) }}
+
+                            <div class="form-label-group">
+                                {{ form_label(inscriptionForm.pseudo) }}
+                                {{ form_widget(inscriptionForm.pseudo) }}
+
+                            </div>
+                            <div class="form-label-group">
+                                {{ form_label(inscriptionForm.nom) }}
+                                {{ form_widget(inscriptionForm.nom) }}
+
+                            </div>
+                            <div class="form-label-group">
+                                {{ form_label(inscriptionForm.prenom) }}
+                                {{ form_widget(inscriptionForm.prenom) }}
+
+                            </div>
+                            <div class="form-label-group">
+                                {{ form_label(inscriptionForm.telephone) }}
+                                {{ form_widget(inscriptionForm.telephone) }}
+
+                            </div>
+                            <div class="form-label-group">
+                                {{ form_label(inscriptionForm.email) }}
+                                {{ form_widget(inscriptionForm.email) }}
+
+                            </div>
+                            <div class="form-label-group">
+                                {{ form_label(inscriptionForm.motDePasse) }}
+                                {{ form_widget(inscriptionForm.motDePasse) }}
+
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                    type="submit">Valider
+                            </button>
+                            <div class="text-center">
+                                {{ form_end(inscriptionForm) }}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>{% block title %}Sorties scolaires{% endblock %}</title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet"
+              href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet"
+              href="{{ asset('css/app.css') }}">
+    {% endblock %}
+</head>
+<body class="h-100">
+<div id="content"
+     class="h-100">
+    {% block body %}{% endblock %}
+</div>
+{% block javascripts %}
+    <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+
+{% endblock %}
+</body>
+</html>

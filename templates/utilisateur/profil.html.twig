@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="utilisateur">
+        <h3> {{ utilisateur.pseudo }} </h3>
+        <div>Nom : {{ utilisateur.nom}}</div>
+        <div>Prenom : {{ utilisateur.prenom}}</div>
+        <div>Telephone : {{ utilisateur.telephone}}</div>
+        <div>Email : {{ utilisateur.email}}</div>
+    </div>
+
+{% endblock %}
